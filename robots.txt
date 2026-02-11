@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gkeprofile.pages.dev/sitemap.xml
+Sitemap: https://girisheduru.github.io/gkeprofile/sitemap.xml
