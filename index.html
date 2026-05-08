@@ -1505,6 +1505,34 @@
               <a class="ai-project-link" href="https://chlapp.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </div>
+          <div class="ai-project-card" style="margin-top:0.9rem;">
+            <div class="ai-project-top">
+              <h4>StockHive</h4>
+              <span class="role-chip">OpenClaw-native Agentic System</span>
+            </div>
+            <p class="ai-project-meta">Weekday 17:00 ET automation for Nasdaq-100 buy candidate discovery</p>
+            <p class="ai-project-summary">
+              StockHive is an OpenClaw-native agentic pipeline that runs every weekday at 17:00 ET to identify the top 5 Nasdaq-100 stock buy candidates, produce a BULLISH/BEARISH market view, and publish the ranked output automatically.
+            </p>
+            <ul class="ai-project-list">
+              <li>Persistent orchestrator launches five ephemeral specialist subagents for data fetch, technicals, fundamentals, sentiment, and publishing</li>
+              <li>Technical, fundamental, and sentiment analysis subagents run in parallel with dedicated MCP servers for Yahoo Finance, Alpha Vantage, Nasdaq Data Link, and NewsAPI</li>
+              <li><code>decision_engine.py</code> is fully deterministic (zero LLM involvement) and combines signals into a weighted composite score</li>
+              <li>Hard guardrails apply automatic exclusions when RSI is above 70 or P/E is above 80 before ranking candidates</li>
+              <li>Final market stance and Top 5 buy list are formatted and sent to Telegram through the telegram-publisher subagent</li>
+            </ul>
+            <div class="ai-project-tags">
+              <span class="ai-project-tag">OpenClaw</span>
+              <span class="ai-project-tag">Agentic AI</span>
+              <span class="ai-project-tag">MCP Servers</span>
+              <span class="ai-project-tag">Python</span>
+              <span class="ai-project-tag">Yahoo Finance</span>
+              <span class="ai-project-tag">Alpha Vantage</span>
+              <span class="ai-project-tag">Nasdaq Data Link</span>
+              <span class="ai-project-tag">NewsAPI</span>
+              <span class="ai-project-tag">Telegram</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
