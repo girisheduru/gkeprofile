@@ -999,6 +999,15 @@
 
     .ai-projects {
       margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      align-items: start;
+    }
+
+    .ai-projects > h3 {
+      grid-column: 1 / -1;
+      margin-bottom: 0.1rem;
     }
 
     .ai-project-card {
@@ -1108,10 +1117,15 @@
       transform: scale(1.02);
     }
 
+    @media (max-width: 1024px) {
+      .ai-projects { grid-template-columns: 1fr 1fr; }
+    }
+
     @media (max-width: 640px) {
       .ai-grid { grid-template-columns: 1fr; }
       .ai-certs-grid { grid-template-columns: 1fr; }
       .ai-spotlight { padding: 1.75rem; }
+      .ai-projects { grid-template-columns: 1fr; }
     }
 
     /* ===== Animations ===== */
@@ -1505,7 +1519,7 @@
               <a class="ai-project-link" href="https://chlapp.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
             </div>
           </div>
-          <div class="ai-project-card" style="margin-top:0.9rem;">
+          <div class="ai-project-card">
             <div class="ai-project-top">
               <h4>StockHive</h4>
               <span class="role-chip">OpenClaw-native Agentic System</span>
@@ -1533,7 +1547,7 @@
               <span class="ai-project-tag">Telegram</span>
             </div>
           </div>
-          <div class="ai-project-card" style="margin-top:0.9rem;">
+          <div class="ai-project-card">
             <div class="ai-project-top">
               <h4>Residential Construction Tracking with Generative AI</h4>
               <span class="role-chip">Claude Cowork Workflow</span>
